@@ -1,4 +1,4 @@
-package hr.ferit.osnove_rwma_dz3;
+package hr.ferit.osnove_rwma_dz4;
 
 import org.junit.Test;
 

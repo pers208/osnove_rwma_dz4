@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="hr.ferit.osnove_rwma_dz4.MainActivity"
     android:orientation="vertical">
 
     <LinearLayout
@@ -12,21 +12,22 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal">
         <EditText
-            android:hint="Enter user ID"
+            android:hint="Enter makeup brand"
             android:id="@+id/edInput"
-            android:inputType="number"
+            android:inputType="text"
             android:layout_weight=".8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
         <Button
-            android:id="@+id/btGet"
+            android:layout_weight=".2"
+            android:id="@+id/btSearch"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Get"></Button>
+            android:text="Search"></Button>
     </LinearLayout>
-    <ListView
-        android:id="@+id/listView"
-        android:layout_width="wrap_content"
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Hello World!"
         app:layout_constraintBottom_toBottomOf="parent"
